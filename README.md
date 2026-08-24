@@ -12,7 +12,7 @@ I build AI products at the intersection of user problems, agent systems, and evi
 
 Safety-aware maternal audio companion: deterministic safeguards first, optional AI personalization second, with explainable recommendations.
 
-### [LuminBuddy](https://github.com/Echo-Smith/luminbuddy-writing-agent-v2) · [Live](https://luminbuddy2.ericdocmic.top/v2/)
+### [LuminBuddy](https://github.com/Echo-Smith/luminbuddy-writing-agent-v2) · [Live](https://luminbuddy2.ericdocmic.top/)
 
 把中文长文创作拆成研究、写作、审校与人类决策门控的可观察流程；当前为工程 Beta，重点验证 Agent 编排、记忆、评估与反馈闭环。
 
