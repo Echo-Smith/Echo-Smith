@@ -1,44 +1,42 @@
-# Echo-Smith
+# 我是 Echo
 
-我关注真实用户问题，也动手把 AI Agent 做成可验证、可干预、可持续迭代的产品。
+做过内容运营，现在主要做 AI 应用的产品设计和开发。
 
-I build AI products at the intersection of user problems, agent systems, and evidence-led iteration.
+不少项目起于工作里的具体麻烦：资料难找、稿子反复改、反馈整理了却没用上。我会从这些问题开始，做原型、写代码，再拿实际任务和用户反馈继续改。
 
-## Featured work｜代表项目
+[作品集](https://profile.ericdocmic.top) · [试用笔润智谈](https://luminbuddy2.ericdocmic.top/)
 
-### [HearHer](https://github.com/Echo-Smith/HearHer-PWA) · [Live](https://hearher.me)
+## 主要项目
 
-面向孕产期情绪与声音陪伴场景的安全优先 MVP。以规则约束兜底、AI 做个性化增强，并向用户解释推荐依据。
+### [笔润智谈 · LuminWrite](https://github.com/Echo-Smith/LuminWrite-OSS)
 
-Safety-aware maternal audio companion: deterministic safeguards first, optional AI personalization second, with explainable recommendations.
+从内容业务中长出来的中文 AI 写作工作台，已用于真实作者的写作和刊发，仍在持续迭代。
 
-### [LuminWrite](https://github.com/Echo-Smith/LuminWrite-OSS) · [Live](https://luminbuddy2.ericdocmic.top/)
+- 把找资料、定提纲、写稿和审校放进同一个工作台，作者可以在关键步骤确认和修改。
+- 记住写作偏好，让修改和反馈影响后续任务，也能查看哪些记忆被实际用上。
+- 用盲评和失败案例检查事实、引用与文风。开源版支持自托管，也可以接入自己的模型 API。
 
-把中文长文创作拆成研究、写作、审校与人类决策门控的可观察流程；当前为工程 Beta，重点验证 Agent 编排、记忆、评估与反馈闭环。
+### [Mirror Memory](https://github.com/Echo-Smith/mirror-memory)
 
-Observable Chinese writing workspace with orchestration, memory, evaluation, and human decision gates. Engineering Beta; market validation remains open.
+给 Agent 做长期记忆：分清用户现在的情况、过去的经历，以及后来纠正的信息。
 
-### [Resume Evidence Copilot](https://github.com/Echo-Smith/universal-resume-assistant)
+保留信息来源和变化记录；遇到冲突时保留疑点，按问题检索当前或历史状态。最近在做记忆整理、遗忘，以及模拟长期使用的评测，检查旧信息会不会被误用、删除的信息会不会重新出现。
 
-隐私优先的通用简历 Skill：区分事实、推断与待补证据，将 JD 匹配、改写与交付收敛为可审计工作流。
+### [心序 · psych-bot](https://github.com/Echo-Smith/psych-support-bot)
 
-Privacy-first resume skill that separates facts, inferences, and evidence gaps across role matching, rewriting, and delivery.
+团队合作的心理支持项目。我参与产品设计和开发，也协调研发和测试。
 
-## How I work｜产品原则
+围绕情绪对话、测评、练习和历史记录设计支持流程，把风险识别放在普通回复之前，用安全回归案例检查危机分流与模型故障处理。用于心理支持，不替代诊断和治疗。
 
-- 先找真实问题，再决定 AI 是否应该介入。
-- 用确定性流程约束模型不确定性，为异常分支和人工接管预留入口。
-- 用用户反馈、行为数据、评估样本和 bad case 推动迭代，而不是用技术名词证明价值。
-- 明确区分已经实现、已经验证与仍待验证的结论。
+### [HearHer · 听见妈妈](https://github.com/Echo-Smith/HearHer-PWA) · [体验](https://hearher.me)
 
-## Project map｜项目索引
+面向孕期和产后的声音陪伴 MVP。根据妈妈当下的状态推荐声音和简单行动，并说明推荐理由；遇到高风险信号时优先提示求助。负责需求、模型评测和 PWA 开发。
 
-| Project | Focus | Status |
-|---|---|---|
-| [HearHer](https://github.com/Echo-Smith/HearHer-PWA) | Safety-aware AI product · PWA · recommendation | MVP online |
-| [LuminBuddy](https://github.com/Echo-Smith/luminbuddy-writing-agent-v2) | Agent orchestration · memory · evaluation | Engineering Beta |
-| [Resume Evidence Copilot](https://github.com/Echo-Smith/universal-resume-assistant) | Codex Skill · evidence-led resume workflow | Public release |
-| [Tencent Experienced Recruit Skill](https://github.com/Echo-Smith/tencent-experienced-recruit) | Public-source job search · matching · interview prep | Community project |
-| [Tencent Campus Recruit Skill](https://github.com/Echo-Smith/tencent-campus-recruit-generic) | Campus recruiting · anti-fraud · preparation | Community project |
+## 其他工具
 
-> The recruiting skills are unofficial community projects based on public information and are not affiliated with Tencent.
+| 项目 | 用来做什么 |
+| --- | --- |
+| [语音问卷助手](https://github.com/Echo-Smith/speak-to-questionnaire) | 读出题目，用语音选择答案、填写文字和切换题目。 |
+| [简历证据助手](https://github.com/Echo-Smith/AI-Resume-Assistant) | 核对真实经历、匹配岗位、整理中英文简历，标清需要补充的证据。 |
+| [写作策略评测](https://github.com/Echo-Smith/writing-agent-benchmark) | 固定任务和评分标准，用盲评比较提示词、记忆和检索策略。 |
+| [open-pro](https://github.com/Echo-Smith/open-pro) | 管理项目的开源版与商业版代码，减少两边重复维护。 |
