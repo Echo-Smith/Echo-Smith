@@ -1,0 +1,40 @@
+# Echo-Smith/Echo-Smith -> .github/workflows/dashboard.yml
+name: refresh dashboard
+
+on:
+  schedule:
+    - cron: "17 0 * * *"   # 每天 UTC 00:17（太平洋时间 17:17 PDT）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dashboard
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: rebuild dashboard block
+        env:
+          # GITHUB_TOKEN 只能看到公开贡献；想把私有贡献计为数字，
+          # 添加 secret DASH_TOKEN（classic PAT，read:user 范围即可）
+          GH_TOKEN: ${{ secrets.DASH_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python3 scripts/dashboard.py
+
+      - name: commit if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "no change"; exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore(dash): refresh dashboard [skip ci]"
+          git push
