@@ -1,40 +1,63 @@
-# 我是 Echo
+```text
+$ whoami
+> 一个碳基 prompt，正在被 AI 反向调教
+$ uptime
+> 模型越智能，我们做的越轻越薄 —— 这页也是
+```
 
-现在主要做 AI 应用的产品设计和开发。
+不写自我介绍。下面的看板是机器人每天自己刷新的，我连改数字的机会都没有。热力图？官方那张就在楼下。
 
-不少项目起于工作里的具体麻烦：资料难找、稿子反复改、反馈整理了却没用上。我会从这些问题开始，做原型、写代码，再拿实际任务和用户反馈继续改。
+### 📊 每日战报
 
-## 主要项目
+<!-- 由 .github/workflows/dashboard.yml 每日自动填充，请勿手改 -->
+<!-- DASH:START -->
+<sub>🤖 GitHub Actions 每天自动刷新 · 最近一次：2026-10-24 UTC · 窗口：近 90 天 · 热力图请看楼下官方版</sub>
 
-### [笔润智谈 · LuminWrite](https://github.com/Echo-Smith/LuminWrite-OSS)
+> 近况：最近 7 天在加速 🚀
 
-从内容业务中长出来的中文 AI 写作工作台，已用于真实作者的写作和刊发，仍在持续迭代。
+| 指标 | 数值 | 点评 |
+| --- | --- | --- |
+| commit | **206** | LuminWrite-OSS 吃掉了 63% 的 commit，偏心得很明显 |
+| PR | **62** | 平均 1.5 天一个 |
+| 有贡献的天数 | **47 / 90** | 一半时间在写，一半时间在想写什么 |
+| 最长连更 | **5 天** | 第 6 天在睡觉 |
+| 单日最高 | **24**（2026-10-09，周五） | 周五 = 本人战斗日 |
 
-- 把找资料、定提纲、写稿和审校放进同一个工作台，作者可以在关键步骤确认和修改。
-- 记住写作偏好，让修改和反馈影响后续任务，也能查看哪些记忆被实际用上。
-- 用盲评和失败案例检查事实、引用与文风。开源版支持自托管，也可以接入自己的模型 API。
+**commit 去哪了**
 
-### [Mirror Memory](https://github.com/Echo-Smith/mirror-memory)
+```text
+LuminWrite-OSS          ████████████████████████  130
+speak-to-questionnaire  █████                     26
+mirror-memory           ███                       16
+本页（对，就是这页）    ██                        13
+其他公开仓库            ████                      21
+```
 
-给 Agent 做长期记忆：分清用户现在的情况、过去的经历，以及后来纠正的信息。
+<sub>commit / PR 来自 GitHub contributionsCollection；天数与单日统计全部贡献类型。</sub>
+<!-- DASH:END -->
 
-保留信息来源和变化记录；遇到冲突时保留疑点，按问题检索当前或历史状态。最近在做记忆整理、遗忘，以及模拟长期使用的评测，检查旧信息会不会被误用、删除的信息会不会重新出现。
+### 🎒 当前装备（AI 相关）
 
-### [心序 · psych-bot](https://github.com/Echo-Smith/psych-support-bot)
+```text
+[主武器]  pi harness（pi-ai + pi-durable + chord）  // LuminWrite TS 重写版的 Agent 底座
+[背包]    PGlite + pgvector                           // 把整个 Postgres 塞进进程，向量顺便带上
+[护甲]    Hono + zod-openapi                          // 先写契约，再写接口
+[饰品]    BYOK：OpenAI / Anthropic 兼容接口            // 你的 key 你做主，模型注册改编自 magpie
+[法术]    MCP                                         // client / server / 沙箱都写过
+[宠物]    Cursor cloud agents                         // LuminWrite 的 PR 大多出自 cursor/* 分支
+[被动]    盲评 + 回归门禁                              // 硬失败不能被平均分抵消
+```
 
-团队合作的心理支持项目。我参与产品设计和开发，也协调研发和测试。
+### 🥚 彩蛋
 
-围绕情绪对话、测评、练习和历史记录设计支持流程，把风险识别放在普通回复之前，用安全回归案例检查危机分流与模型故障处理。用于心理支持，不替代诊断和治疗。
+- 🧠 一个被教会**怎么忘记**的 Agent 记忆：用户说"别再提了"，它就真不提，备份恢复之后也不会诈尸 → [mirror-memory](https://github.com/Echo-Smith/mirror-memory)
+- 🧬 拿干细胞分化的思路做方案生成，然后在 README 里自己承认：多花约 47% token，还没证明更好 → [stemcell](https://github.com/Echo-Smith/stemcell)
+- 🎙 对着问卷说"下一题"，它真的翻页 → [speak-to-questionnaire](https://github.com/Echo-Smith/speak-to-questionnaire)
+- 🪆 管理开源版 / 商业版的小工具，被它大哥 [LuminWrite](https://github.com/Echo-Smith/LuminWrite-OSS) 用上了 → [open-pro](https://github.com/Echo-Smith/open-pro)
 
-### [HearHer · 听见妈妈](https://github.com/Echo-Smith/HearHer-PWA) · [体验](https://hearher.me)
-
-面向孕期和产后的声音陪伴 MVP。根据妈妈当下的状态推荐声音和简单行动，并说明推荐理由；遇到高风险信号时优先提示求助。负责需求、模型评测和 PWA 开发。
-
-## 其他工具
-
-| 项目 | 用来做什么 |
-| --- | --- |
-| [语音问卷助手](https://github.com/Echo-Smith/speak-to-questionnaire) | 读出题目，用语音选择答案、填写文字和切换题目。 |
-| [简历证据助手](https://github.com/Echo-Smith/AI-Resume-Assistant) | 核对真实经历、匹配岗位、整理中英文简历，标清需要补充的证据。 |
-| [写作策略评测](https://github.com/Echo-Smith/writing-agent-benchmark) | 固定任务和评分标准，用盲评比较提示词、记忆和检索策略。 |
-| [open-pro](https://github.com/Echo-Smith/open-pro) | 管理项目的开源版与商业版代码，减少两边重复维护。 |
+```diff
++ 测试通过 ≠ 模型是对的
++ 每次只改一个变量
+- 一键生成
+- 编数据（看板是机器人填的，想编也插不上手）
+```
