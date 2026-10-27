@@ -11,26 +11,26 @@ $ uptime
 
 <!-- 由 .github/workflows/dashboard.yml 每日自动填充，请勿手改 -->
 <!-- DASH:START -->
-<sub>🤖 GitHub Actions 每天自动刷新 · 最近一次：2026-10-26 UTC · 窗口：近 90 天 · 热力图请看楼下官方版</sub>
+<sub>🤖 GitHub Actions 每天自动刷新 · 最近一次：2026-10-27 UTC · 窗口：近 90 天 · 热力图请看楼下官方版</sub>
 
 > 近况：最近 7 天在加速 🚀
 
 | 指标 | 数值 | 点评 |
 | --- | --- | --- |
-| commit | **250** | LuminWrite-OSS 吃掉了 52% 的 commit，偏心得很明显 |
+| commit | **273** | 雨露均沾 |
 | PR | **62** | 平均 1.5 天一个 |
 | 有贡献的天数 | **52 / 90** | 一半时间在写，一半时间在想写什么 |
 | 最长连更 | **7 天** | 第 8 天在睡觉 |
-| 单日最高 | **31**（2026-10-21，周三） | 周日 = 本人战斗日 |
+| 单日最高 | **34**（2026-10-25，周日） | 周日 = 本人战斗日 |
 
 **commit 去哪了**
 
 ```text
 LuminWrite-OSS          ████████████████████████  130
+mirror-memory           █████████                 49
 Routekeeper             █████                     29
-mirror-memory           █████                     28
 speak-to-questionnaire  █████                     26
-其他公开仓库            ███████                   37
+其他公开仓库            ███████                   39
 ```
 
 <sub>commit / PR 来自 GitHub contributionsCollection；天数与单日统计全部贡献类型。</sub>
