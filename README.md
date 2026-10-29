@@ -11,7 +11,7 @@ $ uptime
 
 <!-- 由 .github/workflows/dashboard.yml 每日自动填充，请勿手改 -->
 <!-- DASH:START -->
-<sub>🤖 GitHub Actions 每天自动刷新 · 最近一次：2026-10-28 UTC · 窗口：近 90 天 · 热力图请看楼下官方版</sub>
+<sub>🤖 GitHub Actions 每天自动刷新 · 最近一次：2026-10-29 UTC · 窗口：近 90 天 · 热力图请看楼下官方版</sub>
 
 > 近况：最近 7 天在加速 🚀
 
